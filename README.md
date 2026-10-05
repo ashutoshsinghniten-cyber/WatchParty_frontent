@@ -19,9 +19,9 @@ npm install
 npm run dev     # http://localhost:5173
 
 
-## Deploy on Vercel
+## Deploy on render
 1. Push this folder to its own GitHub repo.
-2. vercel.com -> Add New -> Project -> import the repo (Framework: Vite is auto-detected).
-3. Settings -> Environment Variables: `VITE_SERVER_URL` = your backend URL (e.g. https://watch-party-api.onrender.com).
-4. Deploy. Copy your Vercel URL and put it in the backend's `CLIENT_ORIGIN` on Render, then redeploy the backend.
+2. render.com -> Add New -> Project -> import the repo (Framework: Vite is auto-detected).
+3. Settings -> Environment Variables: `VITE_SERVER_URL` = your backend URL (e.g. https://watchparty-backend-yw57.onrender.com).
+4. Deploy. Copy your render URL and put it in the backend's `CLIENT_ORIGIN` on Render, then redeploy the backend.
 Note: Vite bakes env vars at build time, so redeploy the frontend after changing `VITE_SERVER_URL`.

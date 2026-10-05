@@ -9,10 +9,7 @@ const loadYT = () => (apiPromise ||= new Promise((res) => {
   window.onYouTubeIframeAPIReady = () => res(window.YT);
 }));
 
-/**
- * Renders the YouTube IFrame player (native controls disabled; we use our own so every action goes through the server).
- * Whenever `playback` changes (from sync_state) we mirror it onto the player.
- */
+
 export default function VideoPlayer({ playback, onTick }) {
   const host = useRef(null);
   const player = useRef(null);
